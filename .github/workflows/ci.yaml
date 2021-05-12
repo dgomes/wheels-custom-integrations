@@ -19,7 +19,7 @@ jobs:
       requirements: ${{ steps.requirements.outputs.exist }}
     steps:
       - name: Check out code from GitHub
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: Lint with JQ
         uses: home-assistant/actions/helpers/jq@master
@@ -85,7 +85,7 @@ jobs:
     name: Validate Python requirements
     steps:
       - name: Check out code from GitHub
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
       - name: Set up Python ${{ env.DEFAULT_PYTHON }}
         uses: actions/setup-python@v2.2.1
         id: python
@@ -115,7 +115,7 @@ jobs:
 
     steps:
       - name: Check out code from GitHub
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: Download requirements.txt
         uses: actions/download-artifact@v2
